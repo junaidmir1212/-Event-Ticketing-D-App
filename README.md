@@ -27,10 +27,6 @@ A hybrid decentralised application (DApp) for event ticketing using ERC-721 NFTs
 - Sepolia testnet ETH
 
 ### Setup
-```bash
-# Clone repository
-git clone https://github.com/mdaniyal2021/event-ticketing-dapp.git
-cd event-ticketing-dapp
 
 # Install root dependencies
 npm install --legacy-peer-deps
@@ -42,8 +38,7 @@ cd backend && npm install
 cd ../frontend && npm install --legacy-peer-deps
 
 ### Environment Variables
-
 Root `.env`:
 
-#Copyrights
+Copyrights
 © Muhammad Junaid Mir
