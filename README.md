@@ -26,19 +26,19 @@ A hybrid decentralised application (DApp) for event ticketing using ERC-721 NFTs
 - MetaMask browser extension
 - Sepolia testnet ETH
 
-### Setup
+## Setup
 
-# Install root dependencies
+### Install root dependencies
 npm install --legacy-peer-deps
 
-# Install backend dependencies
+### Install backend dependencies
 cd backend && npm install
 
-# Install frontend dependencies
+### Install frontend dependencies
 cd ../frontend && npm install --legacy-peer-deps
 
 ### Environment Variables
 Root `.env`:
 
-Copyrights
+## Copyrights
 © Muhammad Junaid Mir
