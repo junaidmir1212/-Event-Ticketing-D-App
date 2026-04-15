@@ -40,8 +40,10 @@ cd backend && npm install
 
 # Install frontend dependencies
 cd ../frontend && npm install --legacy-peer-deps
-```
 
 ### Environment Variables
 
 Root `.env`:
+
+#Copyrights
+© Muhammad Junaid Mir
