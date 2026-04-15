@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #0f0f1a;
+  background-image: url('/images/DApp-backgroud.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/* Dark overlay taake text readable rahe */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 26, 0.82);
+  z-index: -1;
+}
+
+.navbar {
+  background: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #16213e;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #6c63ff;
+}
+
+.btn {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #6c63ff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5a52d5;
+}
+
+.btn-primary:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.btn-success {
+  background: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #218838;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6c63ff, #48cae4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.event-card {
+  background: #1a1a2e;
+  border: 1px solid #16213e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  border-color: #6c63ff;
+}
+
+.event-card h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.event-card .venue {
+  color: #48cae4;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-card .date {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.event-card .price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #6c63ff;
+  margin-bottom: 1rem;
+}
+
+.event-card .tickets-left {
+  font-size: 0.85rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.ticket-card {
+  background: #1a1a2e;
+  border: 1px solid #16213e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ticket-card .token-id {
+  font-size: 0.8rem;
+  color: #6c63ff;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-valid {
+  background: #1a4a2e;
+  color: #28a745;
+}
+
+.badge-used {
+  background: #4a1a1a;
+  color: #dc3545;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  background: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.alert-success {
+  background: #1a4a2e;
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.alert-error {
+  background: #4a1a1a;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #aaa;
+}
+
+.wallet-info {
+  font-size: 0.85rem;
+  color: #aaa;
+  background: #16213e;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+}
